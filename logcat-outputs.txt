@@ -1,0 +1,51 @@
+Here are collected examples of outputs from EmulatorDetector.logcat(). Feel free 
+to send me your outputs and i will add it here. 
+
+----- EMULATORS -----
+
+=== Emulator ===
+Build.PRODUCT sdk
+Build.MANUFACTURER unknown
+Build.BRAND generic
+Build.DEVICE generic
+Build.MODEL sdk
+Build.HARDWARE goldfish
+Build.FINGERPRINT generic/sdk/generic:4.3/JB_MR2/774058:eng/test-keys
+
+=== Emulator Google SDK ===
+Build.PRODUCT google_sdk
+Build.MANUFACTURER unknown
+Build.BRAND generic
+Build.DEVICE generic
+Build.MODEL google_sdk
+Build.HARDWARE goldfish
+Build.FINGERPRINT generic/google_sdk/generic:4.4/KRT16L/892118:eng/test-keys
+
+=== X86 Emulator ===
+Build.PRODUCT sdk_x86
+Build.MANUFACTURER unknown
+Build.BRAND generic_x86
+Build.DEVICE generic_x86
+Build.MODEL Android SDK built for x86
+Build.HARDWARE goldfish
+Build.FINGERPRINT generic_x86/sdk_x86/generic_x86:4.3/JSS15J/eng.android-build.20130801.155736:eng/test-keys
+
+=== Genymotion ===
+Build.PRODUCT vbox86p
+Build.MANUFACTURER Genymotion
+Build.BRAND generic
+Build.DEVICE vbox86p
+Build.MODEL Galaxy Nexus - 4.1.1 - API 16 - 720x1280
+Build.HARDWARE vbox86
+Build.FINGERPRINT generic/vbox86p/vbox86p:4.1.1/JRO03S/eng.buildbot.20131111.205844:userdebug/test-keys
+
+----- DEVICES -----
+
+=== HTC One ===
+Build.PRODUCT htc_europe
+Build.MANUFACTURER HTC
+Build.BRAND htc
+Build.DEVICE m7
+Build.MODEL HTC One
+Build.HARDWARE m7
+Build.FINGERPRINT htc/htc_europe/m7:4.2.2/JDQ39/235216.8:user/release-keys
