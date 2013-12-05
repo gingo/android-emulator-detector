@@ -26,4 +26,4 @@ Installation
 
 Download jar archive and attach it as a project library:
 
-https://github.com/gingo/android-emulator-detector/blob/master/emulator_detector_v0.1.0.jar
+https://github.com/gingo/android-emulator-detector/raw/master/emulator_detector_v0.1.0.jar
