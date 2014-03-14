@@ -29,7 +29,6 @@ public class EmulatorDetector {
     public static boolean isEmulator() {
 
         if(rating < 0) { // rating is not calculated yet
-            int rating = 0;
 
             if(Build.PRODUCT.equals("sdk") ||
                     Build.PRODUCT.equals("google_sdk") ||
