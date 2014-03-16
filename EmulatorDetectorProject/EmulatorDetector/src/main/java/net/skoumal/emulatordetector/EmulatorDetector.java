@@ -29,48 +29,50 @@ public class EmulatorDetector {
     public static boolean isEmulator() {
 
         if(rating < 0) { // rating is not calculated yet
-            int rating = 0;
+            int newRating = 0;
 
             if(Build.PRODUCT.equals("sdk") ||
                     Build.PRODUCT.equals("google_sdk") ||
                     Build.PRODUCT.equals("sdk_x86") ||
                     Build.PRODUCT.equals("vbox86p")) {
-                rating ++;
+                newRating ++;
             }
 
             if(Build.MANUFACTURER.equals("unknown") ||
                     Build.MANUFACTURER.equals("Genymotion")) {
-                rating ++;
+                newRating ++;
             }
 
             if(Build.BRAND.equals("generic") ||
                     Build.BRAND.equals("generic_x86")) {
-                rating ++;
+                newRating ++;
             }
 
             if(Build.DEVICE.equals("generic") ||
                     Build.DEVICE.equals("generic_x86") ||
                     Build.DEVICE.equals("vbox86p")) {
-                rating ++;
+                newRating ++;
             }
 
             if(Build.MODEL.equals("sdk") ||
                     Build.MODEL.equals("google_sdk") ||
                     Build.MODEL.equals("Android SDK built for x86")) {
-                rating ++;
+                newRating ++;
             }
 
             if(Build.HARDWARE.equals("goldfish") ||
                     Build.HARDWARE.equals("vbox86")) {
-                rating ++;
+                newRating ++;
             }
 
             if(Build.FINGERPRINT.contains("generic/sdk/generic") ||
                     Build.FINGERPRINT.contains("generic_x86/sdk_x86/generic_x86") ||
                     Build.FINGERPRINT.contains("generic/google_sdk/generic") ||
                     Build.FINGERPRINT.contains("generic/vbox86p/vbox86p")) {
-                rating ++;
+                newRating ++;
             }
+
+            rating = newRating;
         }
 
         return rating > 4;
