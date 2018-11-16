@@ -103,7 +103,8 @@ public class EmulatorDetector {
                 String opengl = android.opengl.GLES20.glGetString(android.opengl.GLES20.GL_RENDERER);
                 if (opengl != null){
                     if( opengl.contains("Bluestacks") || 
-                        opengl.contains("Translator")
+                        opengl.contains("Translator") ||
+                        opengl.contains("youwave")
                     )
                     newRating += 10;
                 }
